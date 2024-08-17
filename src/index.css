@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+textarea::placeholder {
+  font-family: 'Space Grotesk', sans-serif; /* Ganti dengan font family yang diinginkan */
+}
+
+.radio-custom {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid #000; /* warna border */
+  position: relative;
+}
+
+input[type='radio']:checked + label .radio-custom {
+  background-color: #ffffff;
+  border-color: #191a23;
+}
+
+input[type='radio'] + label .radio-custom::before {
+  content: '';
+  display: block;
+  width: 12px; /* ukuran titik dalam lingkaran */
+  height: 12px;
+  border-radius: 50%;
+  background: #b9ff66; /* warna hijau */
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+input[type='radio']:checked + label .radio-custom::before {
+  opacity: 1;
+}
+
+@layer components {
+  .text-base {
+    /* Text for base paragraph */
+    @apply font-space text-p leading-auto;
+  }
+  .heading-h4 {
+    /* Heading level 4 */
+    @apply font-space text-h4 leading-auto font-medium;
+  }
+  .heading-h1 {
+    /* Heading level 1 */
+    @apply font-space text-h1 leading-auto font-medium;
+  }
+  .heading-h2 {
+    /* Heading level 2 */
+    @apply font-space text-h2 leading-auto font-medium;
+  }
+  .heading-h3 {
+    /* Heading level 3 */
+    @apply font-space text-h3 leading-auto font-medium;
+  }
+  .mob-heading-h1 {
+    /* Mobile heading level 1 */
+    @apply font-space text-h1-mob leading-auto font-medium;
+  }
+  .mob-heading-h2 {
+    /* Mobile heading level 2 */
+    @apply font-space text-h2-mob leading-auto font-medium;
+  }
+  .mob-heading-h3 {
+    /* Mobile heading level 3 */
+    @apply font-space text-h3-mob leading-auto font-medium;
+  }
+  .mob-heading-h4 {
+    /* Mobile heading level 4 */
+    @apply font-space text-h4-mob leading-auto font-medium;
+  }
+  .mob-text-base {
+    /* Mobile base paragraph */
+    @apply font-space text-p-mob leading-24;
+  }
+}
