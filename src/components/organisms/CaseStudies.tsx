@@ -9,7 +9,7 @@ const CaseStudies = () => {
         Explore Real-Life Examples of Our Proven Digital Marketing Success
         through Our Case Studies
       </p>
-      <div className="flex gap-5 lg:bg-dark lg:justify-around lg:rounded-[45px]">
+      <div className="flex gap-5 lg:bg-dark lg:justify-around lg:rounded-[45px] overflow-scroll">
         <CaseStudyCard />
         <div className="hidden lg:block w-[0.5px] my-10 bg-white" />
         <CaseStudyCard />
