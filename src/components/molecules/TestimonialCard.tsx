@@ -2,7 +2,7 @@ const TestimonialCard = () => {
   return (
     <div className="p-8 rounded-[45px] bg-dark ">
       <div className="p-8 border border-green rounded-[45px]">
-        <p className="mob-text-base text-white w-[270px]">
+        <p className="mob-text-base text-white">
           "We have been working with Positivus for the past year and have seen a
           significant increase in website traffic and leads as a result of their
           efforts. The team is professional, responsive, and truly cares about

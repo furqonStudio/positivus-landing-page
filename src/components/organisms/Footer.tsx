@@ -1,13 +1,12 @@
 import Button from '../atoms/Button'
+import Logo from '../atoms/Logo'
 
 const Footer = () => {
   return (
     <div className="py-12">
-      <img
-        src="/src/assets/logo-white.png"
-        alt="'ogo-white"
-        className="m-auto mb-9"
-      />
+      <div className="w-[144px] md:w-fit mb-9 m-auto">
+        <Logo type="white" />
+      </div>
       <div className="space-y-4 text-center">
         <p className="mob-text-base text-white">About Us</p>
         <p className="mob-text-base text-white">Services</p>

@@ -19,8 +19,7 @@ function App() {
           <section className="mt-10">
             <Hero />
           </section>
-          <section className="mt-16 space-y-4">
-            <CompanyLogosSection />
+          <section className="mt-16">
             <CompanyLogosSection />
           </section>
           <section className="mt-16">

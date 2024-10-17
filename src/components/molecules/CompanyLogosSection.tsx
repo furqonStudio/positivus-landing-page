@@ -2,9 +2,8 @@ import CompanyLogos from '../atoms/CompanyLogos'
 
 const CompanyLogosSection = () => {
   return (
-    <div className="space-y-5">
+    <div className="space-y-4">
       <CompanyLogos />
-      {/* <CompanyLogos /> */}
     </div>
   )
 }
