@@ -2,7 +2,7 @@ type HeadingProps = {
   text: string
   type?: string
   isSmall?: boolean
-  isCenter?: boolean
+  isCenter?: boolean | { sm?: boolean; md?: boolean; lg?: boolean }
 }
 
 const Heading: React.FC<HeadingProps> = ({
@@ -23,13 +23,19 @@ const Heading: React.FC<HeadingProps> = ({
     }
   })()
 
+  const centerClass = (() => {
+    if (typeof isCenter === 'boolean') {
+      return isCenter ? 'm-auto' : ''
+    } else {
+      return `${isCenter.sm ? 'sm:m-auto' : 'sm:m-0'} ${
+        isCenter.md ? 'md:m-auto' : 'md:m-0'
+      } ${isCenter.lg ? 'lg:m-auto' : 'lg:m-0'}`
+    }
+  })()
+
   return (
-    <div
-      className={`${className} px-2 w-fit rounded-lg ${
-        isCenter ? 'm-auto' : null
-      }`}
-    >
-      <p className={`${isSmall ? 'mob-heading-h3' : 'mob-heading-h2'} `}>
+    <div className={`${className} ${centerClass} px-2 w-fit rounded-lg`}>
+      <p className={`${isSmall ? 'mob-heading-h3' : 'mob-heading-h2'}`}>
         {text}
       </p>
     </div>

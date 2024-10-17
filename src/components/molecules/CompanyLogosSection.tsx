@@ -4,7 +4,7 @@ const CompanyLogosSection = () => {
   return (
     <div className="space-y-5">
       <CompanyLogos />
-      <CompanyLogos />
+      {/* <CompanyLogos /> */}
     </div>
   )
 }

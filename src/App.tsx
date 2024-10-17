@@ -13,13 +13,14 @@ import Testimonials from './components/organisms/Testimonials'
 function App() {
   return (
     <main>
-      <div className="w-[430px] m-auto">
+      <div className="max-w-[430px] md:max-w-max m-auto">
         <Navbar />
-        <div className="px-5 mt-8">
+        <div className="px-5 mt-8 lg:px-24">
           <section className="mt-10">
             <Hero />
           </section>
-          <section className="mt-16">
+          <section className="mt-16 space-y-4">
+            <CompanyLogosSection />
             <CompanyLogosSection />
           </section>
           <section className="mt-16">

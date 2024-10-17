@@ -35,7 +35,7 @@ const Card: React.FC<CardProps> = ({
 
   return (
     <div
-      className={`${bgClassName} p-12 rounded-[45px] border border-dark shadow-[0_4px_0px_#191A23]`}
+      className={`${bgClassName} p-12 rounded-[45px] border border-dark shadow-[0_4px_0px_#191A23] lg:w-[600px]`}
     >
       <Heading text={headingTitle1} isSmall type={headingType} />
       <Heading text={headingTitle2} isSmall type={headingType} />

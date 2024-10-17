@@ -7,11 +7,14 @@ const CompanyLogos: React.FC = () => {
       key={i}
       src={`/src/assets/company-logos/company-logo-${i + 1}.png`}
       alt={`Company Logo ${i + 1}`}
+      width={126}
       className="grayscale"
     />
   ))
 
-  return <div className="flex flex-row gap-9 overflow-hidden">{logos}</div>
+  return (
+    <div className="flex flex-row gap-9 lg:gap-24 overflow-hidden">{logos}</div>
+  )
 }
 
 export default CompanyLogos
