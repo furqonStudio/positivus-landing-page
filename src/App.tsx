@@ -45,7 +45,7 @@ function App() {
           </section>
         </div>
       </div>
-      <footer className="mt-16 bg-dark">
+      <footer className="mt-16 lg:px-24">
         <Footer />
       </footer>
     </main>

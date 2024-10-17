@@ -8,11 +8,7 @@ type LogoProps = {
 const Logo: React.FC<LogoProps> = ({ type = 'default' }) => {
   const logoSrc = type === 'white' ? logoWhite : logoDefault
 
-  return (
-    <div>
-      <img src={logoSrc} alt="logo" />
-    </div>
-  )
+  return <img src={logoSrc} alt="logo" />
 }
 
 export default Logo
