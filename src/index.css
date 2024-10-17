@@ -40,6 +40,10 @@ input[type='radio']:checked + label .radio-custom::before {
   opacity: 1;
 }
 
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none; /* Sembunyikan scrollbar di WebKit */
+}
+
 @layer components {
   .text-base {
     /* Text for base paragraph */

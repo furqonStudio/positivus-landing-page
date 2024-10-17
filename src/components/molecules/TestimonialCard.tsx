@@ -24,10 +24,10 @@ const TestimonialCard = () => {
   ]
 
   return (
-    <div className="p-8 rounded-[45px] bg-dark">
-      <div className="flex flex-row gap-8">
+    <div className="p-8 rounded-[45px] bg-dark ">
+      <div className="flex flex-row gap-8 overflow-x-scroll scrollbar-hidden">
         {testimonialsData.map(({ id, quote, name, jobTitle }) => (
-          <div key={id} className="p-8 border border-green rounded-[45px]">
+          <div key={id} className="p-8 border border-green rounded-[45px] ">
             <p className="mob-text-base text-white min-w-56 md:min-w-96 min-h-fit">
               "{quote}"
             </p>

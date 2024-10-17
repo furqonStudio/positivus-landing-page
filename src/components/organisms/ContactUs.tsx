@@ -8,9 +8,9 @@ const ContactUs = () => {
       <p className="mob-text-base mt-8 mb-10 text-center">
         Connect with Us: Let's Discuss Your Digital Marketing Needs
       </p>
-      <div className="px-9 py-10 lg:px-24 lg:py-16 rounded-[45px] bg-gray relative mb-8">
+      <div className="px-9 py-10 lg:px-24 lg:py-16 rounded-[45px] bg-gray relative mb-8 overflow-hidden">
         <div className="space-y-5 lg:max-w-lg">
-          <div className="flex flex-row justify-between  px-6 mb-9 max-w-xs m-auto lg:mx-0">
+          <div className="flex flex-row justify-between px-6 mb-9 max-w-xs m-auto md:mx-0 md:px-0">
             <div className="flex items-center">
               <input
                 type="radio"
@@ -24,7 +24,7 @@ const ContactUs = () => {
                 className="flex items-center cursor-pointer"
               >
                 <span className="radio-custom"></span>
-                <span className="mob-text-base ml-4">Say Hi</span>
+                <span className="mob-text-base ml-4 ">Say Hi</span>
               </label>
             </div>
             <div className="flex items-center">
