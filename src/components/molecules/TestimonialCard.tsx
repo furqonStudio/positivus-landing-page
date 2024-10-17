@@ -1,22 +1,44 @@
 const TestimonialCard = () => {
+  const testimonialsData = [
+    {
+      id: 1,
+      quote:
+        'We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.',
+      name: 'John Smith',
+      jobTitle: 'Marketing Director at XYZ Corp',
+    },
+    {
+      id: 2,
+      quote:
+        'Positivus has transformed our online presence! Their dedicated team is knowledgeable and always available to answer our questions. We couldn’t be happier with the results!',
+      name: 'Jane Doe',
+      jobTitle: 'CEO of ABC Inc',
+    },
+    {
+      id: 3,
+      quote:
+        "The level of service and commitment from Positivus is unmatched. They've helped us grow our digital marketing strategy and deliver great results!",
+      name: 'Michael Brown',
+      jobTitle: 'Chief Marketing Officer at 123 Co',
+    },
+  ]
+
   return (
-    <div className="p-8 rounded-[45px] bg-dark ">
-      <div className="p-8 border border-green rounded-[45px]">
-        <p className="mob-text-base text-white">
-          "We have been working with Positivus for the past year and have seen a
-          significant increase in website traffic and leads as a result of their
-          efforts. The team is professional, responsive, and truly cares about
-          the success of our business. We highly recommend Positivus to any
-          company looking to grow their online presence."
-        </p>
+    <div className="p-8 rounded-[45px] bg-dark">
+      <div className="flex flex-row gap-8">
+        {testimonialsData.map(({ id, quote, name, jobTitle }) => (
+          <div key={id} className="p-8 border border-green rounded-[45px]">
+            <p className="mob-text-base text-white min-w-56 md:min-w-96 min-h-fit">
+              "{quote}"
+            </p>
+            <div className="mt-4">
+              <h4 className="mob-heading-h4 text-green">{name}</h4>
+              <p className="mob-text-base text-white">{jobTitle}</p>
+            </div>
+          </div>
+        ))}
       </div>
-      <div className="mt-4">
-        <h4 className="mob-heading-h4 text-green">John Smith</h4>
-        <p className="mob-text-base text-white">
-          Marketing Director at XYZ Corp
-        </p>
-      </div>
-      <div className="flex flex-row justify-between items-center mt-14">
+      <div className="flex flex-row justify-between items-center mt-8  max-w-sm m-auto">
         <svg
           width="24"
           height="24"
@@ -33,70 +55,21 @@ const TestimonialCard = () => {
         </svg>
 
         <div className="flex space-x-2">
-          <svg
-            width="14"
-            height="14"
-            viewBox="0 0 14 14"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M7.0099 2.05941L14 0L11.9604 7.0099L14 14L7.0099 11.9604L0 14L2.05941 7.0099L0 0L7.0099 2.05941Z"
-              fill="#B9FF66"
-            />
-          </svg>
-
-          <svg
-            width="14"
-            height="14"
-            viewBox="0 0 14 14"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M7.0099 2.05941L14 0L11.9604 7.0099L14 14L7.0099 11.9604L0 14L2.05941 7.0099L0 0L7.0099 2.05941Z"
-              fill="white"
-            />
-          </svg>
-
-          <svg
-            width="14"
-            height="14"
-            viewBox="0 0 14 14"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M7.0099 2.05941L14 0L11.9604 7.0099L14 14L7.0099 11.9604L0 14L2.05941 7.0099L0 0L7.0099 2.05941Z"
-              fill="white"
-            />
-          </svg>
-
-          <svg
-            width="14"
-            height="14"
-            viewBox="0 0 14 14"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M7.0099 2.05941L14 0L11.9604 7.0099L14 14L7.0099 11.9604L0 14L2.05941 7.0099L0 0L7.0099 2.05941Z"
-              fill="white"
-            />
-          </svg>
-
-          <svg
-            width="14"
-            height="14"
-            viewBox="0 0 14 14"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M7.0099 2.05941L14 0L11.9604 7.0099L14 14L7.0099 11.9604L0 14L2.05941 7.0099L0 0L7.0099 2.05941Z"
-              fill="white"
-            />
-          </svg>
+          {[...Array(5)].map((_, index) => (
+            <svg
+              key={index}
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.0099 2.05941L14 0L11.9604 7.0099L14 14L7.0099 11.9604L0 14L2.05941 7.0099L0 0L7.0099 2.05941Z"
+                fill={index < 4 ? '#B9FF66' : 'white'}
+              />
+            </svg>
+          ))}
         </div>
 
         <svg
