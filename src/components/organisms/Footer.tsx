@@ -3,7 +3,7 @@ import Logo from '../atoms/Logo'
 
 const Footer = () => {
   return (
-    <div className="py-12 bg-dark rounded-t-[45px] lg:p-16">
+    <footer className="py-12 bg-dark rounded-t-[45px] lg:p-16">
       <div className="lg:flex lg:flex-row items-center justify-between">
         <div className="w-fit mb-9 lg:mb-0 m-auto lg:m-0 ">
           <Logo type="white" />
@@ -56,7 +56,7 @@ const Footer = () => {
         <p>© 2023 Positivus. All Rights Reserved.</p>
         <p>Privacy Policy</p>
       </div>
-    </div>
+    </footer>
   )
 }
 

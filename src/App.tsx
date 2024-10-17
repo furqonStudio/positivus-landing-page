@@ -12,10 +12,10 @@ import Testimonials from './components/organisms/Testimonials'
 
 function App() {
   return (
-    <main>
+    <div>
       <div className="max-w-[430px] md:max-w-max m-auto">
         <Navbar />
-        <div className="px-5 mt-8 lg:px-24">
+        <main className="px-5 mt-8 lg:px-24">
           <section className="mt-10 lg:mt-16">
             <Hero />
           </section>
@@ -43,12 +43,12 @@ function App() {
           <section className="mt-16 lg:mt-32">
             <ContactUs />
           </section>
-        </div>
+        </main>
       </div>
-      <footer className="mt-16 lg:mt-32 lg:px-24">
+      <div className="mt-16 lg:mt-32 lg:px-24">
         <Footer />
-      </footer>
-    </main>
+      </div>
+    </div>
   )
 }
 
