@@ -68,16 +68,13 @@ const Services = () => {
   return (
     <div>
       <div className="flex lg:flex-row flex-col items-center lg:gap-10">
-        <Heading
-          text="Services"
-          isCenter={{ sm: true, md: false, lg: false }}
-        />
+        <Heading text="Services" />
         <p className="mob-text-base mt-8 mb-10 text-center lg:text-left lg:w-[580px] lg:text-base">
           At our digital marketing agency, we offer a range of services to help
           businesses grow and succeed online. These services include:
         </p>
       </div>
-      <div className="space-y-8 flex flex-col lg:flex-row lg:flex-wrap lg:space-y-0 lg:gap-7">
+      <div className="grid lg:grid-cols-2 gap-8 ">
         {servicesData.map((service) => (
           <Card
             headingTitle1={service.title1}
