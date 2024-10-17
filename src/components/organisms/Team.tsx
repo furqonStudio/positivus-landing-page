@@ -78,11 +78,13 @@ const Team = () => {
 
   return (
     <div>
-      <Heading text="Team" isCenter />
-      <p className="mob-text-base mt-8 mb-10 text-center">
-        Meet the skilled and experienced team behind our successful digital
-        marketing strategies
-      </p>
+      <div className="flex lg:flex-row flex-col items-center lg:gap-10">
+        <Heading text="Team" />
+        <p className="mob-text-base mt-8 mb-10 text-center lg:text-left lg:w-[400px]">
+          Meet the skilled and experienced team behind our successful digital
+          marketing strategies
+        </p>
+      </div>
       <div className="grid lg:grid-cols-3 gap-8">
         {TeamData.slice(0, displayCount).map((person) => (
           <TeamCard

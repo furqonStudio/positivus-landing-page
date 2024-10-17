@@ -4,10 +4,12 @@ import Heading from '../atoms/Heading'
 const ContactUs = () => {
   return (
     <div>
-      <Heading text="Contact Us" isCenter />
-      <p className="mob-text-base mt-8 mb-10 text-center">
-        Connect with Us: Let's Discuss Your Digital Marketing Needs
-      </p>
+      <div className="flex lg:flex-row flex-col items-center lg:gap-10">
+        <Heading text="Contact Us" />
+        <p className="mob-text-base mt-8 mb-10 text-center lg:text-left lg:w-[300px]">
+          Connect with Us: Let's Discuss Your Digital Marketing Needs
+        </p>
+      </div>
       <div className="px-9 py-10 lg:px-24 lg:py-16 rounded-[45px] bg-gray relative mb-8 overflow-hidden">
         <div className="space-y-5 lg:max-w-lg">
           <div className="flex flex-row justify-between px-6 mb-9 max-w-xs m-auto md:mx-0 md:px-0">

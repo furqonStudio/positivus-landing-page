@@ -30,11 +30,18 @@ const OurWorkingProcess = () => {
   ]
   return (
     <div>
-      <Heading text="Our Working" isCenter />
-      <Heading text="Process" isCenter />
-      <p className="mob-text-base mt-8 mb-10 text-center">
-        Step-by-Step Guide to Achieving Your Business Goals
-      </p>
+      <div className="flex lg:flex-row flex-col items-center lg:gap-10">
+        <div className="lg:hidden items-center flex flex-col">
+          <Heading text="Our Working" />
+          <Heading text="Process" />
+        </div>
+        <div className="hidden lg:block">
+          <Heading text="Our Working Process" />
+        </div>
+        <p className="mob-text-base mt-8 mb-10 text-center lg:text-left lg:w-[300px]">
+          Step-by-Step Guide to Achieving Your Business Goals
+        </p>
+      </div>
       <div className="space-y-5">
         {accordionsData.map((accordion) => (
           <Accordion index={accordion.id} title={accordion.title} />

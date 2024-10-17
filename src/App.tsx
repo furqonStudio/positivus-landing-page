@@ -16,36 +16,36 @@ function App() {
       <div className="max-w-[430px] md:max-w-max m-auto">
         <Navbar />
         <div className="px-5 mt-8 lg:px-24">
-          <section className="mt-10">
+          <section className="mt-10 lg:mt-16">
             <Hero />
           </section>
-          <section className="mt-16">
+          <section className="mt-16 lg:mt-32">
             <CompanyLogosSection />
           </section>
-          <section className="mt-16">
+          <section className="mt-16 lg:mt-32">
             <Services />
           </section>
-          <section className="mt-16">
+          <section className="mt-16 lg:mt-32">
             <ProposalCard />
           </section>
-          <section className="mt-16">
+          <section className="mt-16 lg:mt-32">
             <CaseStudies />
           </section>
-          <section className="mt-16">
+          <section className="mt-16 lg:mt-32">
             <OurWorkingProcess />
           </section>
-          <section className="mt-16">
+          <section className="mt-16 lg:mt-32">
             <Team />
           </section>
-          <section className="mt-16">
+          <section className="mt-16 lg:mt-32">
             <Testimonials />
           </section>
-          <section className="mt-16">
+          <section className="mt-16 lg:mt-32">
             <ContactUs />
           </section>
         </div>
       </div>
-      <footer className="mt-16 lg:px-24">
+      <footer className="mt-16 lg:mt-32 lg:px-24">
         <Footer />
       </footer>
     </main>
