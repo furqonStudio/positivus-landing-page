@@ -11,7 +11,7 @@ const Team = () => {
       jobTitle: 'CEO and Founder',
       description:
         '10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy',
-      imgUrl: '/src/assets/team/team-1.png',
+      imgUrl: '/assets/team/team-1.png',
     },
     {
       id: 2,
@@ -19,7 +19,7 @@ const Team = () => {
       jobTitle: 'Director of Operations',
       description:
         '7+ years of experience in project management and team leadership. Strong organizational and communication skills',
-      imgUrl: '/src/assets/team/team-2.png',
+      imgUrl: '/assets/team/team-2.png',
     },
     {
       id: 3,
@@ -27,7 +27,7 @@ const Team = () => {
       jobTitle: 'Senior SEO Specialist',
       description:
         '5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization',
-      imgUrl: '/src/assets/team/team-3.png',
+      imgUrl: '/assets/team/team-3.png',
     },
     {
       id: 4,
@@ -35,7 +35,7 @@ const Team = () => {
       jobTitle: 'PPC Manager',
       description:
         '3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis',
-      imgUrl: '/src/assets/team/team-4.png',
+      imgUrl: '/assets/team/team-4.png',
     },
     {
       id: 5,
@@ -43,7 +43,7 @@ const Team = () => {
       jobTitle: 'Social Media Specialist',
       description:
         '4+ years of experience in social media marketing. Proficient in creating and scheduling content, analyzing metrics, and building engagement',
-      imgUrl: '/src/assets/team/team-5.png',
+      imgUrl: '/assets/team/team-5.png',
     },
     {
       id: 6,
@@ -51,7 +51,7 @@ const Team = () => {
       jobTitle: 'Content Creator',
       description:
         '2+ years of experience in writing and editing. Skilled in creating compelling, SEO-optimized content for various industries',
-      imgUrl: '/src/assets/team/team-4.png',
+      imgUrl: '/assets/team/team-4.png',
     },
   ]
 

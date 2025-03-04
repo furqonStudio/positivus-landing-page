@@ -83,7 +83,7 @@ const ContactUs = () => {
           <Button text="Send Message" />
         </div>
         <img
-          src="/src/assets/contact/illustration.png"
+          src="/assets/contact/illustration.png"
           alt="contact-illustration"
           className="absolute top-0 -right-80 hidden lg:block"
         />

@@ -1,4 +1,4 @@
-import burgerIcon from '../../assets/icons/burger.png'
+import burgerIcon from '/assets/icons/burger.png'
 import Logo from '../atoms/Logo'
 
 const Navbar = () => {

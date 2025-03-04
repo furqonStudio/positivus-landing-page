@@ -19,7 +19,7 @@ const Card: React.FC<CardProps> = ({
   bgColor,
   bgLink = 'black',
   iconLink = 'green',
-  imgUrl = '/src/assets/services/seo.png',
+  imgUrl = '/assets/services/seo.png',
 }) => {
   const bgClassName = (() => {
     switch (bgColor) {

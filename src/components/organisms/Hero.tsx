@@ -8,7 +8,7 @@ const Hero = () => {
           Navigating the digital landscape for success
         </h1>
         <img
-          src="/src/assets/hero-image.png"
+          src="/assets/hero-image.png"
           alt="hero-image"
           className="m-auto mb-5 lg:hidden"
         />
@@ -21,7 +21,7 @@ const Hero = () => {
       </div>
       <div className="lg:w-1/2">
         <img
-          src="/src/assets/hero-image.png"
+          src="/assets/hero-image.png"
           alt="hero-image"
           className="hidden lg:block "
           width={600}

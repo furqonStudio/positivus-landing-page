@@ -10,7 +10,7 @@ const Accordion: React.FC<AccordionProps> = ({ title, index }) => {
         <p className="text-3xl font-space font-medium">{index}</p>
         <h4 className="mob-heading-h4">{title}</h4>
       </div>
-      <img src="/src/assets/icons/plus.png" alt="plus" width={30} height={30} />
+      <img src="/assets/icons/plus.png" alt="plus" width={30} height={30} />
     </div>
   )
 }

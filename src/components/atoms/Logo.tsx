@@ -1,5 +1,5 @@
-import logoDefault from '../../assets/logo-default.png'
-import logoWhite from '../../assets/logo-white.png'
+import logoDefault from '/assets/logo-default.png'
+import logoWhite from '/assets/logo-white.png'
 
 type LogoProps = {
   type?: 'default' | 'white'

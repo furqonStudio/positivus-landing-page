@@ -14,7 +14,7 @@ const ProposalCard = () => {
         <Button text="Get your proposal" />
       </div>
       <img
-        src="/src/assets/proposal/illustration.png"
+        src="/assets/proposal/illustration.png"
         alt="proposal-illustration"
         className="absolute hidden lg:block -top-10 right-0"
       />

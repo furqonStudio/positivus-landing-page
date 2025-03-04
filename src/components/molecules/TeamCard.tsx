@@ -20,7 +20,7 @@ const TeamCard: React.FC<TeamCardProps> = ({
           <p className="mob-text-base">{title}</p>
         </div>
         <img
-          src="/src/assets/icons/social.png"
+          src="/assets/icons/social.png"
           alt="social-icon"
           width={34}
           height={34}

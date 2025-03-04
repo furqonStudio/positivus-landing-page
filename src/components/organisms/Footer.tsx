@@ -15,7 +15,7 @@ const Footer = () => {
           <p className="mob-text-base text-white">Pricing</p>
         </div>
         <img
-          src="/src/assets/icons/social-footer.png"
+          src="/assets/icons/social-footer.png"
           alt="social-footer"
           className="hidden lg:block object-contain"
         />
@@ -47,7 +47,7 @@ const Footer = () => {
         </div>
       </div>
       <img
-        src="/src/assets/icons/social-footer.png"
+        src="/assets/icons/social-footer.png"
         alt="social-footer"
         className="m-auto lg:hidden"
       />

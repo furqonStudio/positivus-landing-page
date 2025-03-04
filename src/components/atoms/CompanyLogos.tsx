@@ -5,7 +5,7 @@ const CompanyLogos: React.FC = () => {
   const logos = Array.from({ length: logoCount }, (_, i) => (
     <img
       key={i}
-      src={`/src/assets/company-logos/company-logo-${i + 1}.png`}
+      src={`/assets/company-logos/company-logo-${i + 1}.png`}
       alt={`Company Logo ${i + 1}`}
       width={126}
       className="grayscale"

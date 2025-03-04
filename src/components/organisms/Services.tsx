@@ -11,7 +11,7 @@ const Services = () => {
       bgColor: 'gray',
       bglink: 'black',
       iconLink: 'green',
-      imgUrl: '/src/assets/services/service-1.png',
+      imgUrl: '/assets/services/service-1.png',
     },
     {
       id: 2,
@@ -21,7 +21,7 @@ const Services = () => {
       bgColor: 'green',
       bglink: 'black',
       iconLink: 'green',
-      imgUrl: '/src/assets/services/service-2.png',
+      imgUrl: '/assets/services/service-2.png',
     },
     {
       id: 3,
@@ -31,7 +31,7 @@ const Services = () => {
       bgColor: 'black',
       bglink: 'white',
       iconLink: 'black',
-      imgUrl: '/src/assets/services/service-3.png',
+      imgUrl: '/assets/services/service-3.png',
     },
     {
       id: 4,
@@ -41,7 +41,7 @@ const Services = () => {
       bgColor: 'gray',
       bglink: 'black',
       iconLink: 'green',
-      imgUrl: '/src/assets/services/service-4.png',
+      imgUrl: '/assets/services/service-4.png',
     },
     {
       id: 5,
@@ -51,7 +51,7 @@ const Services = () => {
       bgColor: 'green',
       bglink: 'black',
       iconLink: 'green',
-      imgUrl: '/src/assets/services/service-5.png',
+      imgUrl: '/assets/services/service-5.png',
     },
     {
       id: 6,
@@ -61,7 +61,7 @@ const Services = () => {
       bgColor: 'black',
       bglink: 'white',
       iconLink: 'black',
-      imgUrl: '/src/assets/services/service-6.png',
+      imgUrl: '/assets/services/service-6.png',
     },
   ]
 
